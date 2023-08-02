@@ -31,6 +31,7 @@ function validateForm() {
     return false;
   } else {
     alert("Terima kasih");
+    return false;
   }
 }
 
