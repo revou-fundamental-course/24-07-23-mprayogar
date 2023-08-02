@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <title>RevoU Mini Project</title>
+  </head>
+  <body>
+    <!-- HEADER NAVBAR -->
+    <header>
+      <nav class="navbar">
+        <span class="navbar-toggle" id="js-navbar-toggle">
+          <i class="fa fa-bars"></i>
+        </span>
+        <a href="#home" class="logo"><img src="asset/icon.png" alt="" width="10%" height="10%" /></a>
+        <ul class="main-nav" id="js-menu">
+          <li>
+            <a href="#article" class="nav-links">Home</a>
+          </li>
+          <li>
+            <a href="#ourPackage" class="nav-links">Our Package</a>
+          </li>
+          <li>
+            <a href="#callAction" class="nav-links">Call Us</a>
+          </li>
+        </ul>
+      </nav>
+
+      <section id="headerTitle">
+        <h1>CALA TRAVEL COMPANY</h1>
+        <h3 id="subtittle">Liburan harus penuh kebebasan dan kesenangan.</h3>
+      </section>
+    </header>
+    <!--  -->
+
+    <!-- ARTICLE SLIDER -->
+    <div class="row">
+      <div class="col-8 col-s-9">
+        <article id="article">
+          <div class="slideshow-container">
+            <div class="mySlides fade">
+              <div class="numbertext">1 / 3</div>
+              <img src="asset/gunung.jpeg" style="width: 100%" />
+            </div>
+
+            <div class="mySlides fade">
+              <div class="numbertext">2 / 3</div>
+              <img src="asset/pantai.jpeg" style="width: 100%" />
+            </div>
+
+            <div class="mySlides fade">
+              <div class="numbertext">3 / 3</div>
+              <img src="asset/pulau.jpeg" style="width: 100%" />
+            </div>
+          </div>
+          <br />
+
+          <div style="text-align: center">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+          </div>
+          <br />
+          <div id="comment">"Liburan menyenangkan dengan CALA TRAVEL"</div>
+          <table style="width: 40%">
+            <tr>
+              <th id="thComment"><img src="asset/profile.jpeg" alt="" id="imgComment" /></th>
+              <td id="comment"><b>Derista Lidya</b> Guru,25</td>
+            </tr>
+          </table>
+          <br />
+          <div id="comment1">
+            Biasanya setiap orang juga memiliki pilihan untuk melakukan traveling secara mandiri atau pun dengan menggunakan travel agent. Tak sedikit pula orang-orang yang ternyata lebih memilih travel agent, sebab dapat memperoleh
+            beberapa keuntungan yang berikut ini.
+          </div>
+          <br />
+          <table style="width: 100%">
+            <tr>
+              <th><img src="asset/1.png" alt="" id="imgComment" /></th>
+              <td id="comment">Destinasi yang tidak kalah menarik dan tidak terlupakan.</td>
+            </tr>
+            <tr>
+              <th><img src="asset/2.png" alt="" id="imgComment" /></th>
+              <td id="comment">Mendapatkan pelayanan yang spesial dari kami karna banyak promo-promo menarik yang bisa didapatkan.</td>
+            </tr>
+            <tr>
+              <th><img src="asset/3.png" alt="" id="imgComment" /></th>
+              <td id="comment">Soal harga? bisa kita sesuaikan dengan destinasi dan tujuan nya.</td>
+            </tr>
+          </table>
+        </article>
+      </div>
+      <!--  -->
+
+      <!-- CONTAC US -->
+      <div class="col-4 col-s-12">
+        <div class="aside">
+          <h2 id="titleSub">Contact Us</h2>
+          <h5 id="titleSub">Tim kami akan menguhubungi kembali!</h5>
+          <form name="myForm" class="myForm1" onsubmit="return validateForm()" method="post">
+            <label for="fname">Your Name</label>
+            <input type="text" id="fname" name="fname" placeholder="First and Last Name" />
+
+            <label for="lname">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="example@gmail.com" />
+
+            <label for="option">What are you interested in?</label>
+            <select id="option" name="option">
+              <option value="bali">Bali</option>
+              <option value="papua">Papua</option>
+              <option value="lombok">Lombok</option>
+            </select>
+
+            <input type="submit" value="Send" />
+          </form>
+        </div>
+      </div>
+
+      <!--  -->
+
+      <!-- OUR PACKAGE SECTION -->
+      <div class="col-12 col-s-9">
+        <section id="ourPackage">
+          <h1 id="textJumbotron">Our Package</h1>
+        </section>
+      </div>
+      <br />
+      <div class="col-12 col-s-9">
+        <div class="column">
+          <div class="card">
+            <img src="asset/papua.webp" alt="Avatar" style="width: 100%" />
+            <h5><b>Kampung Ramah Anak, Papua</b></h5>
+            <p>Papua atau dikenal oleh dunia internasional dengan sebutan Guinea Baru atau Nugini atau yang dulu pernah disebut dengan Irian atau Irian Jaya.</p>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="card">
+            <img src="asset/bromo.jpeg" alt="Avatar" style="width: 100%" />
+            <h5><b>Bromo Tengger, Malang</b></h5>
+            <p>Gunung Bromo atau dalam bahasa Tengger dieja "Brama", juga disebut Kaldera Tengger, adalah sebuah gunung berapi aktif di Jawa Timur, Indonesia.</p>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="card">
+            <img src="asset/raja ampat.webp" alt="Avatar" style="width: 100%" />
+            <h5><b>Raja Ampat, Papua Barat</b></h5>
+            <p>Kepulauan Raja Ampat adalah gugusan kepulauan yang berlokasi di barat bagian Semenanjung Kepala Burung Pulau Papua. Daya.</p>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="card">
+            <img src="asset/lombok.jpeg" alt="Avatar" style="width: 100%" />
+            <h5><b>Gunung Rinjani, Lombok</b></h5>
+            <p>Gunung Rinjani adalah gunung yang berlokasi di Pulau Lombok, Nusa Tenggara Barat. Gunung yang merupakan gunung berapi kedua tertinggi di Indonesia dengan ketinggian 3.726.</p>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="card">
+            <img src="asset/bali.jpeg" alt="Avatar" style="width: 100%" />
+            <h5><b>Pulau Ulun Danu, Bali</b></h5>
+            <p>Pura Ulun Danu Bratan, Pura Ulun Danu Beratan atau Bratan Pura merupakan sebuah pura dan candi air besar di Bali, Indonesia - candi utama air lainnya menjadi Pura Ulun Danu Batur.</p>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="card">
+            <img src="asset/maluku.webp" alt="Avatar" style="width: 100%" />
+            <h5><b>Pulau Morotai, Maluku</b></h5>
+            <p>Kepulauan Maluku adalah sekelompok pulau di Indonesia yang merupakan bagian dari Nusantara. Kepulauan Maluku terletak di lempeng Eurasia dan Pasifik.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!--  -->
+
+    <!-- FOOTTER -->
+
+    <div id="callAction">
+      <h1>Cala Travel Memberikan Warna Liburan mu Bersama Orang Tercinta</h1>
+      <h3 id="subtittle">
+        Jadikan liburan mu menjadi perjalanan yang menyenangkan dan mengesankan. Tidak perlu repot-repot mengurusan schedule,destinasi dan budgetin. Semua kami bantu dari kedatangan sampai kepulangan. Bawa kopermu dan berlibur Cala Travel
+        Company.
+      </h3>
+      <button onclick="topFunction()" id="myBtn" title="Go to top">Call to Action</button>
+    </div>
+    <br />
+    <div class="footer">
+      <p>
+        Copyright©2023 - Design By:
+        <a href="https://www.instagram.com/mprayogar_/" class="text-white fw-bold">CTO | Prayoga Ramadani</a>
+      </p>
+    </div>
+    <!--  -->
+    <script src="js/script.js"></script>
+  </body>
+</html>
